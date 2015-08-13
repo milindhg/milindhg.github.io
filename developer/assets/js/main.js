@@ -55,5 +55,16 @@ jQuery(document).ready(function($) {
     /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
     GitHubActivity.feed({ username: "caseyscarborough", selector: "#ghfeed" });
 
+	
+	$("#slideshow > div:gt(0)").hide();
+
+	setInterval(function() { 
+	  $('#slideshow > div:first')
+		.fadeOut(3000)
+		.next()
+		.fadeIn(3000)
+		.end()
+		.appendTo('#slideshow');
+	},  10000);
 
 });

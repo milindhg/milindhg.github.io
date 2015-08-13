@@ -29,6 +29,26 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+	
+	<style type="text/css">
+		#slideshow { 
+			position: relative; 
+			height: 200px;
+			padding: 10px; 
+			/*box-shadow: 0 0 20px rgba(0,0,0,0.4); */
+		}
+
+		#slideshow > div { 
+			position: absolute; 
+			top: 10px; 
+			left: 10px; 
+			right: 10px; 
+			bottom: 10px; 
+		}
+		.badge{
+			float:right;
+		}
+	</style>
     
 </head> 
 
@@ -36,7 +56,7 @@
     <!-- ******HEADER****** --> 
     <header class="header">
         <div class="container">                       
-            <img class="profile-image img-responsive pull-left" src="assets/images/profile.png" alt="James Lee" />
+            <img class="profile-image img-responsive pull-left" height="300px" width="300px" src="assets/images/profile.JPG" alt="Milind Gokhale" />
             <div class="profile-content pull-left">
                 <h1 class="name">Milind Gokhale</h1>
                 <h2 class="desc"> Software Engineer | Web Developer | Python Enthusiast </h2>   
@@ -46,7 +66,17 @@
                     <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                     <li><a href="#"><i class="fa fa-github-alt"></i></a></li>                  
                     <li class="last-item"><a href="#"><i class="fa fa-hacker-news"></i></a></li>                 
-                </ul> 
+                </ul>
+				<div class="content">
+					<ul class="list-unstyled">
+						<li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Bloomington, IN, US</li>
+						<li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="mailto:mgokhale@indiana.edu">mgokhale@indiana.edu</a></li>
+						<li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="mailto:milindhg@gmail.com">milindhg@gmail.com</a></li>
+						<li><i class="fa fa-envelope-o"></i><span class="sr-only">Mobile:</span>812)-369-7654</li>
+						<li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="http://milindhg@github.io">http://milindhg@github.io</a></li>
+					</ul>
+				</div><!--//content-->  
+
             </div><!--//profile-->
             <a class="btn btn-cta-primary pull-right" href="mailto:milindhg@gmail.com" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>              
         </div><!--//container-->
@@ -54,16 +84,16 @@
     
     <div class="container sections-wrapper">
         <div class="row">
-            <div class="primary col-md-8 col-sm-12 col-xs-12">
+            <div class="primary col-md-12 col-sm-12 col-xs-12">
                 <section class="about section">
                     <div class="section-inner">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
                             <p>I am a computer science graduate passionate about developing robust applications having high performance and aesthetic UI. I like solving problems and working on front-end as well as back-end systems. </p>    
          
-        <p>I have more than 4 years of experience developing high standard software products in Telecom Industry and am accustomed to working with diverse set of individuals in day-to-day life. Currently I am pursuing masters in Computer Science from Indiana University Bloomington. My speciality lies in the ability to quickly learn new technologies and work effectively in a fast paced dynamic environment.</p>
+							<p>I have more than 4 years of experience developing high standard software products in Telecom Industry and am accustomed to working with diverse set of individuals in day-to-day life. Currently I am pursuing masters in Computer Science from Indiana University Bloomington. My speciality lies in the ability to quickly learn new technologies and work effectively in a fast paced dynamic environment.</p>
 		
-		<p>In my spare time I like exploring new applications, listening music, watching movies and try out new things on my PC.
+							<p>In my spare time I like exploring new applications, listening music, watching movies and try out new things on my PC. </p>
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
@@ -164,7 +194,7 @@
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
-                
+
                 <section class="experience section">
                     <div class="section-inner">
                         <h2 class="heading">Work Experience</h2>
@@ -186,33 +216,8 @@
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
-                <section class="github section">
-                    <div class="section-inner">
-                        <h2 class="heading">My GitHub</h2>
-                        <p>You can embed your GitHub activities using Casey Scarborough's <a href="http://caseyscarborough.com/projects/github-activity/" target="_blank">GitHub Activity Stream</a> widget.        
-                        <!--//Usage: http://caseyscarborough.com/projects/github-activity/ -->                       
-                        <div id="ghfeed" class="ghfeed">
-                        </div><!--//ghfeed-->
-                        
-                    </div><!--//secton-inner-->
-                </section><!--//section-->
-            </div><!--//primary-->
-            <div class="secondary col-md-4 col-sm-12 col-xs-12">
-                 <aside class="info aside section">
-                    <div class="section-inner">
-                        <h2 class="heading sr-only">Basic Information</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Bloomington, IN, US</li>
-                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="#">mgokhale@indiana.edu</a></li>
-                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="#">milindhg@gmail.com</a></li>
-                                <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="#">http://milindhg@github.io</a></li>
-                            </ul>
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//aside-->
-                
-                <aside class="skills aside section">
+
+				<section class="skills section">
                     <div class="section-inner">
                         <h2 class="heading">Skills</h2>
                         <div class="content">
@@ -289,41 +294,8 @@
                             </div>              
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
-                </aside><!--//section-->
+                </section><!--//section-->
                 
-                <aside class="testimonials aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Testimonials</h2>
-                        <div class="content">
-                            <div class="item">
-                                <blockquote class="quote">                                  
-                                    <p><i class="fa fa-quote-left"></i>James is an excellent software engineer and he is passionate about what he does. You can totally count on him to deliver your projects!</p>
-                                </blockquote>                
-                                <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span></p>                                                             
-                            </div><!--//item-->
-                            
-                            <p><a class="more-link" href="#"><i class="fa fa-external-link"></i> More on Linkedin</a></p> 
-                            
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
-                <aside class="education aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item">                      
-                                <h3 class="title"><i class="fa fa-graduation-cap"></i> MSc Psychology and Computer Science</h3>
-                                <h4 class="university">University College London <span class="year">(2011-2012)</span></h4>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><i class="fa fa-graduation-cap"></i> BSc Computer Science</h3>
-                                <h4 class="university">University of Bristol <span class="year">(2008-2011)</span></h4>
-                            </div><!--//item-->
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                            
                 <aside class="languages aside section">
                     <div class="section-inner">
                         <h2 class="heading">Languages</h2>
@@ -342,70 +314,72 @@
                     </div><!--//section-inner-->
                 </aside><!--//section-->
                 
-                <aside class="blog aside section">
+                <aside class="education aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Latest Blog Posts</h2>
-                        <p>You can use Sascha Depold's <a href="https://github.com/sdepold/jquery-rss" target="_blank">jQuery RSS plugin</a> to pull in your blog post feeds.</p>
-                        <div id="rss-feeds" class="content">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i> MS Computer Science</h3>
+                                <h4 class="university">Indiana University Bloomington<span class="year"> (2005-2009)</span> <span class="badge"> GPA: 3.55/4.0</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i> BE Computer Engineering</h3>
+                                <h4 class="university">University of Pune <span class="year"> (2014-2016)</span> <span class="badge"> GPA: 3.42/4.0</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                            
+                <section class="testimonials aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Testimonials</h2>
+                        <div class="content">
+							<div id="slideshow">
+								<div class="item">
+									<blockquote class="quote">                                  
+										<p><i class="fa fa-quote-left"></i>Milind has a rare combination of creativity and hard work. His technical acumen and deep understanding of business processes made him favorite resource for all the managers. He proactively strives to make things easier for whole team and his various initiatives have helped speeding up the project in Amdocs. It was always a pleasure working with Milind.</p>
+									</blockquote>                
+									<p class="source"><span class="name">Samir Shah</span><br /><span class="title">Group Lead at Amdocs</span></p>                                                             
+								</div><!--//item-->
+								<div class="item">
+									<blockquote class="quote">                                  
+										<p><i class="fa fa-quote-left"></i>I had an opportunity to work with Milind in my telecom project as CDM. Working with Milind is always a delight. His hardwork and dedication is unparalled. Having worked with him long, I've seem him building Innovative ways to solve normal things. Hope to work with him soon again.</p>
+									</blockquote>                
+									<p class="source"><span class="name">Sanjay Upadhyay</span><br /><span class="title">Program Manager with Telecom Expertise | Amdocs BSS,OSS | Delivery Manager </span></p>                                                             
+								</div><!--//item-->
+								<div class="item">
+									<blockquote class="quote">                                  
+										<p><i class="fa fa-quote-left"></i>Milind is a self starter, presentable, very hardworking and always pushes himself to accomplish more. The project he and his team developed was highly acclaimed by the .NET Group in the company. It was fascinating to see how he tackled his tasks as well led his team throughout the project. He met his goals and deadlines and did an exceptional job.</p>
+									</blockquote>                
+									<p class="source"><span class="name">Pravin Kalel</span><br /><span class="title">Experienced Software Engineer in Bay Area, CA </span></p>                                                             
+								</div><!--//item-->
+								<div class="item">
+									<blockquote class="quote">                                  
+										<p><i class="fa fa-quote-left"></i>Milind and I recently workded on a quite sophisticated new software enhancement that was required in order for our Telecommunication client, to be able to offer a completely new functionality. Milind was deeply involved in the scoping and implementation of the new design. He was responsive, responsible and demonstrated a deep understanding of the requirements, the constraints and the direction the solution needs to go to.</p>
+									</blockquote>                
+									<p class="source"><span class="name">Ophir Baer</span><br /><span class="title">Amdocs BA and Solution Architect at MetroPCS at Amdocs </span></p>                                                             
+								</div><!--//item-->
+							</div>                            
+                            <p><a class="more-link" href="#"><i class="fa fa-external-link"></i> More on Linkedin</a></p> 
+                            
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->                
+				
+				<section class="github section" style="display:none;">
+                    <div class="section-inner">
+                        <h2 class="heading">My GitHub</h2>
+                        <p>You can embed your GitHub activities using Casey Scarborough's <a href="http://caseyscarborough.com/projects/github-activity/" target="_blank">GitHub Activity Stream</a> widget.        
+                        <!--//Usage: http://caseyscarborough.com/projects/github-activity/ -->                       
+                        <div id="ghfeed" class="ghfeed">
+                        </div><!--//ghfeed-->
+                        
+                    </div><!--//secton-inner-->
+                </section><!--//section-->
+                
 
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
-                <aside class="list music aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Favourite coding music</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-headphones"></i> <a href="#">Etiam hendrerit urna nunc</a></li>
-                                <li><i class="fa fa-headphones"></i> <a href="#">Ut sollicitudin in mauris non auctor</a></li>
-                                <li><i class="fa fa-headphones"></i> <a href="#">Etiam hendrerit urna nunc</a></li>
-                                <li><i class="fa fa-headphones"></i> <a href="#">Duis et felis bibendum</a></li>
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
-                <aside class="list conferences aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Conferences</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-calendar"></i> <a href="https://developer.apple.com/wwdc/" target="_blank">WWDC 2014</a> (San Francisco)</li>
-                                <li><i class="fa fa-calendar"></i> <a href="http://hive.aigaseattle.org/">Hive</a> (Seattle)</li>
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
-                <aside class="credits aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Credits</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><a href="http://getbootstrap.com/" target="_blank"><i class="fa fa-external-link"></i> Bootstrap 3.2</a></li>
-                                <li><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank"><i class="fa fa-external-link"></i> FontAwsome 4.1</a></li>
-                                <li><a href="http://jquery.com/" target="_blank"><i class="fa fa-external-link"></i> jQuery</a></li>
-                                <li><a href="http://caseyscarborough.com/projects/github-activity/" target="_blank"><i class="fa fa-external-link"></i> GitHub Activity Stream</a></li>
-                                
-                                <li><a href="https://github.com/sdepold/jquery-rss" target="_blank"><i class="fa fa-external-link"></i> jQuery RSS</a></li>
-                                
-                                <li>Profile image: <a href="https://www.flickr.com/photos/dotbenjamin/2577394151" target="_blank">Ben Smith</a></li>
-                                <li>iPad and iPhone mocks: <a href="https://dribbble.com/perlerar" target="_blank">Regy Perlera</a></li>
-                                
-                            </ul>
-                            
-                            <hr/>
-                            
-                             <p>This responsive HTML5 CSS3 site template is handcrafted by UX designer <a href="https://www.linkedin.com/in/xiaoying" target="_blank">Xiaoying Riley</a> at <a href="http://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a> for developers and is <strong>FREE</strong> under the <a class="dotted-link" href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 License</a></p>
-                             <p>We will improve or add new features to this template based on users' feedback so follow us on twitter to get notified when a new version is out!</p>
-                            <a class="btn btn-cta-secondary btn-follow" href="https://twitter.com/3rdwave_themes" target="_blank"><i class="fa fa-twitter"></i> Follow us</a>
-                            <a class="btn btn-cta-primary btn-download" href="http://themes.3rdwavemedia.com/website-templates/free-responsive-website-template-for-developers/" target="_blank"><i class="fa fa-download"></i> I want to download</a>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-              
-            </div><!--//secondary-->    
+            </div><!--//primary-->
+
         </div><!--//row-->
     </div><!--//masonry-->
     
