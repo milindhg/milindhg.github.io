@@ -1,0 +1,174 @@
+body {
+  font-family: verdana, sans-serif;
+  font-size: 100%;
+}
+#siteWrapper {
+  background-color: yellow;
+  width: 65%;
+  margin: 0 auto;
+}
+footer {
+  font-size: small;
+  color: white;
+  background-color: grey;
+}
+aside {
+  background-color: green;
+  border-style: solid;
+}
+article {
+  border-style: solid;
+  background-color: green;
+}
+section {}
+/*   TABLE  */
+
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+/*   END OF TABLE  */
+
+/*   HEADINGS  */
+
+h1 {
+  text-align: center;
+  font-size: 250%;
+}
+h2 {
+  text-align: center;
+  font-size: 175%;
+}
+h3 {
+  text-align: center;
+  font-size: 125%;
+}
+/*   END OF HEADINGS   */
+
+/* Overall menu area  */
+
+.nav {
+  background-color: pink;
+  text-align: center;
+}
+/* Unordered lists within nav  */
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+/* Unordered lists within nav that have list elements (links)  */
+
+.nav ul li {
+  display: inline-block;
+}
+/* Hover properties for the top menu links  */
+
+.nav ul li:hover {
+  background-color: yellow;
+}
+/* Normal Link properties */
+
+.nav ul a,
+visited {
+  color: purple;
+  padding: 20px 10px 20px 10px;
+  display: block;
+  text-decoration: none;
+}
+/* Hover links are block */
+
+.nav ul li:hover ul {
+  display: block;
+}
+/* Drop-down menus properties */
+
+.nav ul ul {
+  position: absolute;
+  text-align: left;
+  display: none;
+  background-color: red;
+}
+/* Drop-downs are blocks */
+
+.nav ul ul li {
+  display: block;
+}
+/* Padding properties for the hyperlinks */
+
+.nav ul ul li a,
+visited {
+  padding: 15px 10px 15px 10px;
+}
+/* Drop-down hover colours */
+
+.nav ul ul li:hover {
+  background-color: yellow;
+}
+.nav ul ul ul {
+  min-width: 175px;
+  background-color: #ADC9F0;
+  margin: -48px 0 0 160px;
+}
+/*    */
+
+.imageBanner {
+  border-style: solid;
+  background-color: orange;
+  height: 200px;
+  overflow: hidden;
+  background-image: url(porsche.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imageBanner h2 {
+  color: #624791;
+  text-align: left;
+}
+.imageBanner img {
+  width: 100%;
+}
+/*    All code below is controlling only the form elements on the website   */
+
+legend {
+  font-size: 20px;
+}
+form {
+  background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  margin: auto;
+  position: relative;
+  width: 550px;
+  height: 700px;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px;
+  font-weight: bold;
+  color: #09C;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #999;
+  border: inset 1px solid #333;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+input {
+  width: 375px;
+  display: block;
+  border: 1px solid #999;
+  height: 25px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+textarea {
+  width: 500px;
+  height: 200px;
+}
