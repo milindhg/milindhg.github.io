@@ -1,0 +1,19 @@
+img {
+    width:100%;
+    opacity: 0.4;
+}
+
+#map { position: relative; }
+#image {position: absolute;}
+#states {
+    position: absolute;
+}
+
+
+span {
+  display: inline-block;
+  vertical-align: middle;}
+
+a {
+    color: black;
+}
