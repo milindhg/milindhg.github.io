@@ -18,7 +18,7 @@ body{
 }
 	
 .left-box{
-	background-color: white;
+	background-color: green;
     height: 400px;
     width: 200px;
 	float: left;
@@ -30,7 +30,7 @@ body{
 }
 
 .center-box{
-	background-color: white;
+	background-color: orange;
     height: 500px;
     min-width: 200px;
 	min-height: 1px;
@@ -40,7 +40,7 @@ body{
 }
 
 .right-box{
-	background-color: white;
+	background-color: blue;
     height: 300px;
     width: 200px;
 	float: right;
@@ -80,6 +80,11 @@ body{
     position: relative;
     background-color: #2D506D;
     color: grey;
+}
+.submit-button:disabled {	
+    background-color: #2D506D;
+    color: grey;
+	cursor:default;
 }
 
 .nav-bar{
@@ -157,4 +162,8 @@ body{
 
 .selected{
 	background-color:grey !important;
+}
+
+.invalid{
+	border-color:red;
 }
